@@ -123,7 +123,7 @@ class BookController extends BaseController
                 ->groupEnd();
         }
 
-        $list = $this->books->orderBy('id', 'DESC')->paginate(4);
+       $list = $this->books->orderBy('id', 'DESC')->paginate(3);
 
         return view('book/index', [
             'books' => $list,
